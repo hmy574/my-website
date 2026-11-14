@@ -1,6 +1,8 @@
 # 我的个人网站
 用 Claude Code + Mimo 从零做的个人网站。
-线上网址：课后部署完成后填在这里。
+线上网址：https://wbapp-nniudi37piopgtrbvkig23.app.workbuddy.host/?sharecode=JZXLI5G34D
+
+> 这是通过 WorkBuddy 内置发布上线的地址，不需要额外账号。讲义课后作业要求的 Cloudflare Pages 部署请用自己的 Cloudflare 账号完成后，替换上面这一行。
 
 ## 本地运行
 
@@ -37,3 +39,7 @@ git config --local --unset user.email
 本地构建已验证：`npm run build`，产物目录 `dist/`。在 Cloudflare 连接这个仓库后，生产分支填 `main`、构建命令填 `npm run build`、产物目录填 `dist`。部署完成后把 `*.pages.dev` 网址填到本文件第 3 行，并补 100–200 字复盘，再提交推送一次。
 
 推送认证走系统的 Git 凭据管理器（浏览器授权），令牌不进代码、不进仓库、不进聊天。
+
+## 复盘（课后本人补写）
+
+待补 100–200 字：总提示词原文、AI 给的惊喜、微调改了什么。这里不代写，避免编造个人体验。
