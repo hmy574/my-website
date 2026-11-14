@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>我的个人网站</title>
+  <meta name="description" content="个人网站首页" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand__mark"></span>
+        <span data-content="name" data-content-label="你的名字"></span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="about.html" data-nav="about">关于我</a>
+        <a href="contact.html" data-nav="contact">联系</a>
+      </nav>
+      <span class="header__meta">01 / 03</span>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__inner">
+          <p class="eyebrow">Personal website / <span data-year></span></p>
+          <h1 data-content="name" data-content-label="你的名字或昵称"></h1>
+          <p class="tagline" data-content="tagline"></p>
+          <p class="meta-line" data-content="school"></p>
+          <div class="actions">
+            <a class="btn" href="about.html">认识我 <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost" href="contact.html">联系我</a>
+          </div>
+        </div>
+        <div class="hero__visual" data-visual aria-hidden="true">
+          <div class="orb"></div>
+          <span class="visual__num">01</span>
+          <span class="visual__dot"></span>
+          <span class="visual__label">HELLO / NICE TO MEET YOU</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <span class="section__num">01</span>
+          <h2>我喜欢 / 擅长 / 想展示的</h2>
+          <p class="section__note">三个位置留给你自己写。写上什么，这个网站就是什么样。</p>
+        </div>
+        <ul class="slots" data-slots="interests"></ul>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <span class="section__num">02</span>
+          <h2>这里先留白</h2>
+          <p class="section__note">经历、奖项、作品都没有编造，等你有了真实内容再填。</p>
+        </div>
+        <div class="blank">
+          <div>
+            <h3>你的作品和经历，以后放这里</h3>
+            <p>现在它们是三个空位，而不是三段看起来很像真的假故事。</p>
+          </div>
+          <span class="blank__tag">TO BE FILLED</span>
+        </div>
+        <ul class="slots" data-slots="highlights" style="margin-top:18px"></ul>
+        <p class="note-bar">
+          全站文字集中在 <code>src/content.js</code>，把 <code>null</code> 换成你自己的内容，
+          这些 <span style="color:#ffb4a3">［待填］</span> 会自动消失。
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <span data-year></span> · 用 AI 一起做的纯静态网站</span>
+      <span>无后端 / 无密钥 / 不收集信息</span>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

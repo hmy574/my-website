@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>关于我 · 我的个人网站</title>
+  <meta name="description" content="关于我" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand__mark"></span>
+        <span data-content="name" data-content-label="你的名字"></span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="about.html" data-nav="about">关于我</a>
+        <a href="contact.html" data-nav="contact">联系</a>
+      </nav>
+      <span class="header__meta">02 / 03</span>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <p class="eyebrow">02 / About</p>
+        <h1>关于我</h1>
+        <p class="page-head__sub">这一页只写真实的东西。没有的先空着 —— 空位比编出来的故事更值得信任。</p>
+      </section>
+
+      <section class="two-col">
+        <div class="prose" data-paragraphs></div>
+        <aside>
+          <ul class="info-list">
+            <li>
+              <span>SCHOOL / 学校 · 专业 · 年级</span>
+              <strong data-content="school"></strong>
+            </li>
+            <li>
+              <span>NOW / 现在在做</span>
+              <strong data-content="now"></strong>
+            </li>
+            <li>
+              <span>NEXT / 想学的</span>
+              <strong data-content="next"></strong>
+            </li>
+          </ul>
+        </aside>
+      </section>
+
+      <section class="section">
+        <div class="section__head">
+          <span class="section__num">02.1</span>
+          <h2>留给以后</h2>
+          <p class="section__note">经历、技能、作品都先不写死，等有真实内容再补。</p>
+        </div>
+        <div class="blank">
+          <div>
+            <h3>三块空位，等你自己来填</h3>
+            <p>一段经历、一项技能、一个作品。凑不齐也没关系，空白本身就是诚实的。</p>
+          </div>
+          <span class="blank__tag">NO FAKE STORIES</span>
+        </div>
+      </section>
+
+      <a class="back" href="index.html"><span aria-hidden="true">←</span> 回到首页</a>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <span data-year></span> · 用 AI 一起做的纯静态网站</span>
+      <span>内容待补 / 无编造信息</span>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

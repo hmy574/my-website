@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>联系 · 我的个人网站</title>
+  <meta name="description" content="联系方式" />
+  <link rel="stylesheet" href="/src/styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header class="site-header">
+      <a class="brand" href="index.html">
+        <span class="brand__mark"></span>
+        <span data-content="name" data-content-label="你的名字"></span>
+      </a>
+      <nav class="nav" aria-label="主导航">
+        <a href="index.html" data-nav="home">首页</a>
+        <a href="about.html" data-nav="about">关于我</a>
+        <a href="contact.html" data-nav="contact">联系</a>
+      </nav>
+      <span class="header__meta">03 / 03</span>
+    </header>
+
+    <main>
+      <section class="page-head">
+        <p class="eyebrow">03 / Contact</p>
+        <h1>找到我</h1>
+        <p class="page-head__sub">只放你想公开的联系方式。默认留了邮箱和 GitHub 两个位置，手机号之类的一概不放。</p>
+      </section>
+
+      <section class="contact-grid">
+        <article class="contact-card">
+          <span class="contact-card__label">EMAIL / 邮箱</span>
+          <a class="contact-card__value" data-content="email" data-link="email"></a>
+          <button class="btn btn--ghost" type="button" data-copy-email>复制邮箱</button>
+        </article>
+        <article class="contact-card">
+          <span class="contact-card__label">GITHUB / 代码</span>
+          <a class="contact-card__value" data-content="github" data-link="github"></a>
+          <a class="btn btn--ghost" data-link="github" href="#">打开主页 <span aria-hidden="true">↗</span></a>
+        </article>
+      </section>
+
+      <section class="section">
+        <div class="blank">
+          <div>
+            <h3>为什么没有留言表单</h3>
+            <p>这是纯前端静态站，没有后端和数据库。表单其实收不到消息，与其摆个假的，不如直接给邮箱。</p>
+          </div>
+          <span class="blank__tag">NO BACKEND</span>
+        </div>
+      </section>
+
+      <a class="back" href="index.html"><span aria-hidden="true">←</span> 回到首页</a>
+    </main>
+
+    <footer class="site-footer">
+      <span>&copy; <span data-year></span> · 用 AI 一起做的纯静态网站</span>
+      <span>只放你想公开的信息</span>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
