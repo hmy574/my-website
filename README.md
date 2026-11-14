@@ -17,29 +17,23 @@ npm run dev
 
 要填的字段：`name`、`tagline`、`school`、`intro`、`interests`、`aboutParagraphs`、`highlights`、`email`、`github`。照片放进 `public/` 后把路径填给 `photo`，首页右侧的圆形装饰会自动换成照片。
 
-## 提交状态
+## 提交与仓库状态
 
-本仓库已 `git init`、切到 `main`，并完成两次本地提交：`init: 初始化仓库` 和 `feat: 网站初版`。
-
-由于 git 全局 `user.name` / `user.email` 尚未设置，而姓名和邮箱不能替你编造，提交时用的是**仅本仓库生效**的占位身份（本机账号名 `h1915` + 本地域邮箱 `h1915@localhost`）：没有写进全局配置，也不是你的真实邮箱。
-
-**推送到 GitHub 前请换成你自己的**，否则提交作者无法关联到你的 GitHub 账号：
+- 已推送到 **https://github.com/hmy574/my-website**（Public，默认分支 `main`），远端 `main` 与本地一致。
+- 提交历史：`init: 初始化仓库`、`feat: 网站初版`，以及文档更新与图标微调两次提交，共四次。
+- 提交作者目前是**仅本仓库生效**的占位身份 `h1915 <h1915@localhost>`：git 全局姓名/邮箱未设置，而姓名邮箱不能替你编造。它不会关联到你的 GitHub 账号，也不会计入贡献图。想修正的话，先设置你自己的身份：
 
 ```bash
 git config --global user.name "你的名字"
 git config --global user.email "你的邮箱"
 git config --local --unset user.name
 git config --local --unset user.email
-git commit --amend --reset-author --no-edit
 ```
 
-最后一条只修正最新一次提交；第一条 `init` 的作者信息如需一并替换，配置好身份后告诉我，我来批量改。
+然后告诉我，我会批量重写这几条提交的作者并同步到远端（需要一次 force push）。
 
-之后在 github.com 建一个**完全空的** Public 仓库（不勾 README / .gitignore / license），再执行：
+## 课后作业：部署到 Cloudflare Pages
 
-```bash
-git remote add origin https://github.com/<你的用户名>/my-website.git
-git push -u origin main
-```
+本地构建已验证：`npm run build`，产物目录 `dist/`。在 Cloudflare 连接这个仓库后，生产分支填 `main`、构建命令填 `npm run build`、产物目录填 `dist`。部署完成后把 `*.pages.dev` 网址填到本文件第 3 行，并补 100–200 字复盘，再提交推送一次。
 
-第一次 push 用浏览器登录或个人访问令牌（勾 repo，只显示一次）。令牌别写进代码、别发到聊天里。
+推送认证走系统的 Git 凭据管理器（浏览器授权），令牌不进代码、不进仓库、不进聊天。
